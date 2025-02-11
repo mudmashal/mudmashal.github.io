@@ -8,9 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* White background with black text */
 body {
-    background: #121212;
-    color: white;
+    background: #fbf9f9;
+    color: #333;
     text-align: center;
 }
 
@@ -19,8 +20,9 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #222;
-    padding: 10px 0;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -28,7 +30,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 nav ul li {
@@ -36,26 +38,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #5e2ca5; /* Purple accent */
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     padding: 10px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: cyan;
+    color: #cb1c09; /* Lighter purple on hover */
 }
 
 /* Sections */
 section {
-    padding: 100px 20px;
-    min-height: 100vh;
+    padding: 20px 20x;
+    min-height: 70vh;
 }
 
 /* Home Section */
 #home {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to right, #e9d7ff, #d6b3ff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,11 +66,17 @@ section {
 }
 
 #home h1 {
-    font-size: 36px;
+    font-size: 40px;
+    color: #5e2ca5;
 }
 
 #home span {
-    color: cyan;
+    color: #0e0000;
+}
+
+#home p {
+    font-size: 18px;
+    color: #0e0101;
 }
 
 /* Skills Section */
@@ -78,15 +87,43 @@ section {
 }
 
 .progress-bar {
-    background: gray;
+    background: #e0e0e0;
     height: 10px;
     border-radius: 5px;
 }
 
 .progress {
-    background: cyan;
+    background: #5e2ca5;
     height: 100%;
     border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #5e2ca5;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius:50px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #a07be3;
+}
+
+/* Links */
+a {
+    color: #5e2ca5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a07be3;
 }
 
 /* Fade-in Effect */
