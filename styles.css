@@ -10,8 +10,9 @@
 
 /* White background with black text */
 body {
+    font-size: 23px;
     background: #fbf9f9;
-    color: #333;
+    color: #0a0000;
     text-align: center;
 }
 
@@ -30,7 +31,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 nav ul li {
@@ -58,45 +59,54 @@ section {
 
 /* Home Section */
 #home {
-    background: linear-gradient(to right, #e9d7ff, #d6b3ff);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 10vh; 
+    background: linear-gradient(to right, #e9d7ff, #d6b3ff); 
 }
 
-#home h1 {
-    font-size: 40px;
-    color: #5e2ca5;
+/* Home Content Alignment */
+.home-content {
+    width: 70%; /* Adjust width as needed */
+    margin-left: 10%; /* Moves everything to the left */
+    text-align: left; /* Aligns all text to the left */
 }
 
-#home span {
-    color: #0e0000;
-}
-
-#home p {
+/* Styling for Subtitle (SFU, Aspiring Dev) */
+.subtitle {
     font-size: 18px;
-    color: #0e0101;
+    color: #050000;
+    font-weight: bold;
 }
 
-/* Skills Section */
-.skill {
-    margin: 20px auto;
-    width: 50%;
-    text-align: left;
+/* Justify About Me Paragraph */
+.about-text {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6; /* Improves readability */
+    color: #020000;
+    max-width: 500px;
 }
 
-.progress-bar {
-    background: #e0e0e0;
-    height: 10px;
-    border-radius: 5px;
+/* Resume Button */
+.home-content button {
+    margin-top: 20px;
+    padding: 12px 220px;
+    font-size: 16px;
+    background: #5e2ca5; /* Purple accent */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
 }
 
-.progress {
-    background: #5e2ca5;
-    height: 100%;
-    border-radius: 5px;
+.home-content button:hover {
+    background: #a07be3;
 }
+
 
 /* Buttons */
 button {
@@ -107,7 +117,7 @@ button {
     font-size: 16px;
     border-radius:50px;
     cursor: pointer;
-    margin-top: 18px;
+    margin-top: 20px;
     transition: background 0.3s ease;
 }
 
