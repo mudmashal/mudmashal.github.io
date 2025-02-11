@@ -67,6 +67,106 @@ body {
     background-color: #145dbb;
 }
 
+/* Work Experience Timeline */
+/* Center the Work Experience Title */
+#experience h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timeline Vertical Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 15%; /* Keeps line on the left */
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #5e2ca5;
+}
+
+/* Each Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    margin-bottom: 40px;
+}
+
+/* Left Side (Year & Dot) */
+.timeline-left {
+    display: flex;
+    align-items: center;
+    left: -144px;
+    gap: 11px; /* Space between year and dot */
+    position: relative;
+    width: 100px;
+    
+}
+
+/* Years */
+.timeline-year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5e2ca5;
+    text-align: right;
+    min-width: 60px;
+}
+
+/* Timeline Dots */
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #5e2ca5;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(94, 44, 165, 0.5);
+    position: relative;
+}
+
+/* Content Boxes Centered */
+.timeline-content {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 50%; /* Centers content */
+    text-align: left;
+    margin-left: -10%;
+}
+
+/* Hover Effect */
+.timeline-item:hover .timeline-content {
+    transform: scale(1.05);
+    background: #e9d7ff;
+}
+
+/* Job Title */
+.timeline-content h3 {
+    color: #5e2ca5;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Company Name */
+.company {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 /* Navigation Bar */
 nav {
     position: fixed;
@@ -119,7 +219,7 @@ section {
 /* Home Content Alignment */
 .home-content {
     width: 70%; /* Adjust width as needed */
-    margin-left: 7%; /* Moves everything to the left */
+    margin-left: 14%; /* Moves everything to the left */
     text-align: left; /* Aligns all text to the left */
 }
 
