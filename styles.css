@@ -15,6 +15,57 @@ body {
     color: #0a0000;
     text-align: center;
 }
+/* Social Media Button Container */
+.social-links {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Social Media Buttons */
+.social-btn {
+    width: 50px; /* Size of the button */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes them circular */
+    background-color: #cdcdce; /* Default background */
+    transition: 0.3s ease-in-out;
+}
+
+/* Social Media Icons */
+.social-btn img {
+    width: 48px; /* Size of icons */
+    height: 48px;
+}
+
+/* Instagram Button */
+.instagram {
+    background-color: hsl(288, 87%, 50%);
+}
+
+.instagram:hover {
+    background-color: #d62d55;
+}
+
+/* GitHub Button */
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #555;
+}
+
+/* Facebook Button */
+.facebook {
+    background-color: #1877F2;
+}
+
+.facebook:hover {
+    background-color: #145dbb;
+}
 
 /* Navigation Bar */
 nav {
@@ -68,7 +119,7 @@ section {
 /* Home Content Alignment */
 .home-content {
     width: 70%; /* Adjust width as needed */
-    margin-left: 10%; /* Moves everything to the left */
+    margin-left: 7%; /* Moves everything to the left */
     text-align: left; /* Aligns all text to the left */
 }
 
@@ -81,7 +132,7 @@ section {
 
 /* Justify About Me Paragraph */
 .about-text {
-    margin-top: 20px;
+    margin-top: 18px;
     text-align: justify;
     font-size: 16px;
     line-height: 1.6; /* Improves readability */
@@ -110,7 +161,7 @@ section {
 
 /* Buttons */
 button {
-    background-color: #5e2ca5;
+    background-color: #cdcdce;
     color: white;
     border: none;
     padding: 10px 30px;
