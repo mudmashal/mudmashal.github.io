@@ -474,3 +474,28 @@ a:hover {
 .contact-form button:hover {
     background: #a07be3;
 }
+
+/* Contact Me Button (Circular Like Social Media Icons) */
+.contact-btn {
+    width: 50px; /* Same size as social icons */
+    height: 50px;
+    background-color: #5e2ca5; /* Purple accent */
+    border: none;
+    border-radius: 50%; /* Makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Contact Button Hover Effect */
+.contact-btn:hover {
+    background-color: #a07be3;
+}
+
+/* Contact Button Icon */
+.contact-btn img {
+    width: 28px; /* Adjust icon size */
+    height: 28px;
+}
