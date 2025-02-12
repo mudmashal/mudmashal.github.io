@@ -353,3 +353,87 @@ a:hover {
         transform: translateY(0);
     }
 }
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Projects Container - Makes Projects Display Side by Side */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Individual Project Cards */
+.project-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Adjust width of each project */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Images */
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Project Info */
+.project-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Project Titles */
+.project-info h3 {
+    font-size: 20px;
+    color: #5e2ca5;
+    margin-bottom: 10px;
+}
+
+/* Project Descriptions */
+.project-info p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Project Links (Buttons) */
+.project-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    background: #5e2ca5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #a07be3;
+}
+
