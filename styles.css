@@ -499,3 +499,34 @@ a:hover {
     width: 28px; /* Adjust icon size */
     height: 28px;
 }
+/* Home Section Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Adds space between text & image */
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Left Side (Text & Social Media) */
+.home-content {
+    flex: 1; /* Takes up available space */
+    text-align: left;
+}
+
+/* Right Side (Selfie Image) */
+.home-image {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    justify-content: center;
+}
+
+.home-image img {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper cropping */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a nice shadow */
+}
