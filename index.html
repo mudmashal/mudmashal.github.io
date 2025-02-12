@@ -52,28 +52,25 @@
     <div class="skills-grid">
         <!-- Programming Skills -->
         <div class="skill-card">
-            <img src="images/html-icon.png" alt="C++">
+        
             <h3>C++</h3>
             <p>Strong understanding of object-oriented programming principles, data structures, and algorithm design. 
                Experienced in writing optimized, modular, and scalable code.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/css-icon.png" alt="HTML & CSS">
             <h3>HTML & CSS</h3>
             <p>Ability to build well structured web pages using HTML and CSS. 
                Understanding of modern design principles to create clean and user-friendly interfaces.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/javascript-icon.png" alt="JavaScript">
             <h3>JavaScript</h3>
             <p>Experienced in creative coding and game development using javascript. 
                Skilled in building interactive visual projects, animations, and engaging 2D games.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/python-icon.png" alt="Python">
             <h3>Python</h3>
             <p>Proficient in Python fundamentals, including scripting, functions, and loops. 
                Capable of solving algorithmic challenges and automating tasks efficiently.</p>
@@ -81,25 +78,21 @@
 
         <!-- Team Skills -->
         <div class="skill-card">
-            <img src="images/communication-icon.png" alt="Communication">
             <h3>Communication</h3>
             <p>Strong verbal and written communication in team settings.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/teamwork-icon.png" alt="Teamwork">
             <h3>Teamwork</h3>
             <p>Experienced in collaborating effectively with diverse teams.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/problem-solving-icon.png" alt="Problem Solving">
             <h3>Problem Solving</h3>
             <p>Analytical thinker who enjoys tackling challenges.</p>
         </div>
 
         <div class="skill-card">
-            <img src="images/leadership-icon.png" alt="Leadership">
             <h3>Leadership</h3>
             <p>Capable of leading projects and making strategic decisions.</p>
         </div>
@@ -185,15 +178,21 @@
         </div>
     </section>
     
+<!-- Contact Section -->
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via this form or email me directly.</p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
-        
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
