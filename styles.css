@@ -530,3 +530,12 @@ a:hover {
     object-fit: cover; /* Ensures proper cropping */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a nice shadow */
 }
+
+.company-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    display: block; /* Ensures proper placement */
+    float: right; /* Aligns logo to the right of the content */
+    margin-top: -40px; /* Adjust positioning relative to text */
+}
