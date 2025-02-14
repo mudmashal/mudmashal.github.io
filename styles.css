@@ -524,9 +524,9 @@ a:hover {
 }
 
 .home-image img {
-    width: 250px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
     height: 250px;
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 5%; /* Makes it circular */
     object-fit: cover; /* Ensures proper cropping */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a nice shadow */
 }
